@@ -7,13 +7,17 @@
 
 
 body {
-    /* Set the background image and define its properties */
+    
     background: url('https://www.shutterstock.com/image-photo/blank-black-corporate-stationery-on-600nw-1051434977.jpg') no-repeat;
+    /* -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover; */
     background-size: cover; 
     background-position: center; 
     background-repeat: no-repeat; 
-    height: 100vh; 
-    margin: 0; 
+    height: 900px; 
+    margin: 0;
     justify-content: center; 
     align-items: center; 
     color: white;
@@ -37,11 +41,11 @@ body {
 }
 
 main {
-    height: 500px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-}
+} 
 
 .logo {
     font-size: 40px;
@@ -78,10 +82,92 @@ main {
 }
 
 img {
-    height: 100px;
-    width: 100px;
-    /* border-radius: 50%; */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 500px;
     object-fit: cover;
     object-position: 50% 80%;
     border: 2px darkgray;
+    border-radius: 50%;
+}
+
+.links {
+    width: fit-content;
+    height: 100px;
+    background-color: aliceblue;
+    padding-right: 60px;
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.link-fb {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/facebook_logo_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.link-lkin {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/linkedin_logo_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.link-inst {
+    width: 100px;
+    height: 100px;
+    background-image: url(img/instagram_logo_icon.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+
+.carousel {
+    position: relative;
+}
+
+.carousel__item {
+    height: 600px;
+    padding: 1em;
+    font-family: "Quicksand", sans-serif;
+    font-weight: bold;
+    font-size: 2em;
+    color: #ffffff;
+    display: none;
+}
+
+.carousel__item--selected {
+    display: block;
+}
+
+.carousel__nav {
+    width: 100%;
+    padding: 20px 0;
+    position:absolute;
+    bottom: 0%;
+    left: 0;
+    text-align: center;
+}
+
+.carousel__button {
+    width: 10px;
+    height: 10px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel__button--selected {
+    background: rgba(255, 255, 255, 0.5);
 }
