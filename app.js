@@ -33,5 +33,4 @@ document.querySelectorAll(".carousel").forEach((carousel) => {
 
     items[0].classList.add("carousel__item--selected");
     buttons[0].classList.add("carousel__button--selected");
-  });
-  
+});
